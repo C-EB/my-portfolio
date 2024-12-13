@@ -69,6 +69,14 @@
 .btn-primary:hover::before {
     left: 0;
 }
+.object-cover {
+    object-fit: cover;
+    object-position: center;
+}
+
+.project-card-hover:hover .project-image-zoom {
+    transform: scale(1.1);
+}
         </style>
     </head>
     <body class="d-flex flex-column h-100 bg-light">
@@ -91,75 +99,74 @@
                 </div>
             </nav>
             <!-- Projects Section-->
-        <!-- Projets Section Améliorée -->
-        <section class="py-5 projects-section">
-            <div class="container px-5 mb-5">
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-3"><span class="text-gradient d-inline">Mes Projets Innovants</span></h1>
-                    <p class="lead text-muted">Exploration technologique et solutions créatives</p>
-                </div>
+ <!-- Projects Section -->
+<!-- Projects Section -->
+<section class="py-5 projects-section">
+    <div class="container px-5 mb-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-3"><span class="text-gradient d-inline">Mes Projets Innovants</span></h1>
+            <p class="lead text-muted">Exploration technologique et solutions créatives</p>
+        </div>
 
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- Projet 1 -->
-                        <div class="project-card card overflow-hidden shadow-lg rounded-5 border-0 mb-5 project-card-hover">
-                            <div class="card-body p-0">
-                                <div class="d-flex flex-column flex-md-row align-items-center">
-                                    <div class="project-image col-md-6">
-                                        <img class="img-fluid w-100 project-image-zoom" src="assets//projects/porshe.jpg" alt="Projet Intelligence Artificielle" />
-                                    </div>
-                                    <div class="project-content p-5 col-md-6">
-                                        <div class="badge bg-gradient-primary-to-secondary text-white mb-3">Machine Learning</div>
-                                        <h2 class="fw-bolder mb-3">Système de Prédiction Avancé</h2>
-                                        <p class="text-muted mb-4">
-                                            Développement d'un modèle prédictif utilisant des algorithmes de deep learning pour analyser des données complexes et fournir des insights précis.
-                                        </p>
-                                        <div class="d-flex flex-wrap gap-2 mb-3">
-                                            <span class="badge bg-light text-dark">Python</span>
-                                            <span class="badge bg-light text-dark">TensorFlow</span>
-                                            <span class="badge bg-light text-dark">Scikit-learn</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <a href="#" class="btn btn-primary me-3">Voir le Projet</a>
-                                            <a href="#" class="text-muted"><i class="bi bi-github"></i> Code Source</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="row gx-4 justify-content-center">
+            <div class="col-md-6 mb-4">
+                <!-- Projet 1 -->
+                <div class="project-card card overflow-hidden shadow-lg rounded-5 border-0 project-card-hover h-100">
+                    <div class="project-image position-relative">
+                        <div class="image-wrapper" style="padding-top: 56.25%; position: relative; overflow: hidden;">
+                            <img src="assets/projects/porshe.jpg" alt="Projet Intelligence Artificielle" 
+                                 class="position-absolute top-0 start-0 w-100 h-100 object-cover project-image-zoom" />
                         </div>
-
-                        <!-- Projet 2 -->
-                        <div class="project-card card overflow-hidden shadow-lg rounded-5 border-0 mb-5 project-card-hover">
-                            <div class="card-body p-0">
-                                <div class="d-flex flex-column flex-md-row-reverse align-items-center">
-                                    <div class="project-image col-md-6">
-                                        <img class="img-fluid w-100 project-image-zoom" src="assets/project2.jpg" alt="Application Web Innovative" />
-                                    </div>
-                                    <div class="project-content p-5 col-md-6">
-                                        <div class="badge bg-gradient-primary-to-secondary text-white mb-3">Développement Web</div>
-                                        <h2 class="fw-bolder mb-3">Platform de Collaboration Intelligente</h2>
-                                        <p class="text-muted mb-4">
-                                            Application web full-stack avec des fonctionnalités de collaboration en temps réel, intégrant des technologies modernes et une expérience utilisateur fluide.
-                                        </p>
-                                        <div class="d-flex flex-wrap gap-2 mb-3">
-                                            <span class="badge bg-light text-dark">React</span>
-                                            <span class="badge bg-light text-dark">Node.js</span>
-                                            <span class="badge bg-light text-dark">MongoDB</span>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <a href="#" class="btn btn-primary me-3">Voir le Projet</a>
-                                            <a href="#" class="text-muted"><i class="bi bi-github"></i> Code Source</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="project-content px-4 pb-4 text-center">
+                        <div class="badge bg-gradient-primary-to-secondary text-white mb-2">Machine Learning</div>
+                        <h2 class="fw-bolder mb-2">Système de Prédiction Avancé</h2>
+                        <p class="text-muted mb-3 small">
+                            Développement d'un modèle prédictif utilisant des algorithmes de deep learning pour analyser des données complexes et fournir des insights précis.
+                        </p>
+                        <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
+                            <span class="badge bg-light text-dark">Python</span>
+                            <span class="badge bg-light text-dark">TensorFlow</span>
+                            <span class="badge bg-light text-dark">Scikit-learn</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a href="#" class="btn btn-primary btn-sm me-3">Voir le Projet</a>
+                            <a href="#" class="text-muted small"><i class="bi bi-github"></i> Code Source</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Section Appel à l'Action -->
+            <div class="col-md-6 mb-4">
+                <!-- Projet 2 -->
+                <div class="project-card card overflow-hidden shadow-lg rounded-5 border-0 project-card-hover h-100">
+                    <div class="project-image position-relative">
+                        <div class="image-wrapper" style="padding-top: 56.25%; position: relative; overflow: hidden;">
+                            <img src="assets/projects/project2.jpg" alt="Application Web Innovative" 
+                                 class="position-absolute top-0 start-0 w-100 h-100 object-cover project-image-zoom" />
+                        </div>
+                    </div>
+                    <div class="project-content px-4 pb-4 text-center">
+                        <div class="badge bg-gradient-primary-to-secondary text-white mb-2">Développement Web</div>
+                        <h2 class="fw-bolder mb-2">Platform de Collaboration Intelligente</h2>
+                        <p class="text-muted mb-3 small">
+                            Application web full-stack avec des fonctionnalités de collaboration en temps réel, intégrant des technologies modernes et une expérience utilisateur fluide.
+                        </p>
+                        <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
+                            <span class="badge bg-light text-dark">React</span>
+                            <span class="badge bg-light text-dark">Node.js</span>
+                            <span class="badge bg-light text-dark">MongoDB</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a href="#" class="btn btn-primary btn-sm me-3">Voir le Projet</a>
+                            <a href="#" class="text-muted small"><i class="bi bi-github"></i> Code Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>        <!-- Section Appel à l'Action -->
         <section class="py-5 bg-gradient-primary-to-secondary text-white">
             <div class="container px-5 my-5">
                 <div class="text-center">

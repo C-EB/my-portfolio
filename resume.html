@@ -1,216 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Portfolio - Charif El Belghiti</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100 bg-light">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Charif El Belghiti</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Portfolio - Charif El Belghiti</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .resume-section {
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: #007bff; /* Primary theme color */
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .card {
+            border: none;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .experience-title {
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+        .duration {
+            color: #007bff;
+        }
+        .small-text {
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column h-100 bg-light">
+    <main class="flex-shrink-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Charif El Belghiti</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+                <p class="lead mb-3 text-muted">Web Developer | Data Scientist | Machine Learning Engineer</p>
+            </div>
+            <div class="resume-section">
+                <h2 class="fw-bolder">Experience</h2>
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <div class="duration">May 2024 - Present</div>
+                        <div class="experience-title">Data Analyst & Power BI Developer | Internship</div>
+                        <div class="small-text">T2S Group, Casablanca, Morocco</div>
+                        <ul>
+                            <li>Analyzed and explored data to extract strategic insights.</li>
+                            <li>Optimized data quality and proposed concrete improvement initiatives.</li>
+                            <li>Cleaned data to ensure accuracy, consistency, and relevance.</li>
+                            <li>Designed and managed efficient and reliable ETL processes.</li>
+                            <li>Integrated data into a centralized data warehouse for optimal management.</li>
+                            <li>Developed data models in Power BI for detailed and accurate analysis.</li>
+                            <li>Created advanced formulas and measures (DAX) to address complex requirements.</li>
+                            <li>Produced interactive reports and dynamic visualizations for stakeholders.</li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-            <!-- Page Content-->
-            <div class="container px-5 my-5">
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
-                    <p class="lead mb-3 text-muted">Web Developer | Data Scientist | Machine Learning Engineer</p>
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <div class="duration">Feb 2023 – Aug 2023</div>
+                        <div class="experience-title">Data Scientist | Internship</div>
+                        <div class="small-text">Leoni, Berrechid, Morocco</div>
+                        <p>
+                            As part of a comprehensive recruitment optimization project, I developed an intelligent chatbot capable of automating candidate selection based on job descriptions. The project included setting up the dataset, fine-tuning a language model, and integrating it into a chatbot system. Below are the key steps of the project:
+                        </p>
+                            <ul>
+                            <li>Set up the dataset by implementing a web scraping system to extract job positions and candidate profiles from LinkedIn. Additional data sources included resumes and the Kaggle dataset.</li>
+                            <li>Prepared and cleaned the collected data to ensure it was structured and usable for model training.</li>
+                            <li>Stored the data in a secure NoSQL database to enable efficient access and management.</li>
+                            <li>Fine-tuned a pre-trained BERT language model on the prepared dataset to achieve robust performance on recruitment-related tasks.</li>
+                            <li>Developed a chatbot that utilized the fine-tuned model and database to automatically select the most suitable candidate profiles for specific job positions.</li>
+                            <li>Enhanced recruitment processes in the HR department by automating candidate matching, increasing efficiency, and reducing manual workload.</li>
+                            </ul>
+                    </div>
                 </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- Experience Section-->
-                        <section>
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
-                                <!-- Download resume button-->
-                                <!-- Note: Set the link href target to a PDF file within your project-->
-                                <a class="btn btn-primary px-4 py-3" href="#!">
-                                    <div class="d-inline-block bi bi-download me-2"></div>
-                                    Download Resume
-                                </a>
-                            </div>
-                            <!-- Experience Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">2019 - Present</div>
-                                                <div class="small fw-bolder">Web Developer</div>
-                                                <div class="small text-muted">Stark Industries</div>
-                                                <div class="small text-muted">Los Angeles, CA</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Experience Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">2017 - 2019</div>
-                                                <div class="small fw-bolder">SEM Specialist</div>
-                                                <div class="small text-muted">Wayne Enterprises</div>
-                                                <div class="small text-muted">Gotham City, NY</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- Education Section-->
-                        <section>
-                            <h2 class="text-secondary fw-bolder mb-4">Education</h2>
-                            <!-- Education Card 1-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2015 - 2017</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">Barnett College</div>
-                                                    <div class="small text-muted">Fairfield, NY</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Master's</div>
-                                                    <div class="small text-muted">Web Development</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Education Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2011 - 2015</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder">ULA</div>
-                                                    <div class="small text-muted">Los Angeles, CA</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Undergraduate</div>
-                                                    <div class="small text-muted">Computer Science</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- Divider-->
-                        <div class="pb-5"></div>
-                        <!-- Skills Section-->
-                        <section>
-                            <!-- Skillset Card-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <!-- Professional skills list-->
-                                    <div class="mb-5">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional Skills</span></h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SEO/SEM Marketing</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Statistical Analysis</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web Development</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Network Security</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Adobe Software Suite</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">User Interface Design</div></div>
-                                        </div>
-                                    </div>
-                                    <!-- Languages list-->
-                                    <div class="mb-0">
-                                        <div class="d-flex align-items-center mb-4">
-                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Ruby</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Node.js</div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <div class="duration">Jun 2022 – Aug 2022</div>
+                        <div class="experience-title">Database Administrator | Internship</div>
+                        <div class="small-text">Evo-Solution, Casablanca, Morocco</div>
+                        <ul>
+                            <li>Designed and developed customized SQL views and reports for payment calculations, including allowances and various factors.</li>
+                            <li>Implemented tailored solutions for attendance and payment calculations based on complex variables such as working hours, bonuses, and absences.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </main>
-        <!-- Footer-->
-        <footer class="bg-white py-5">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-auto">
-                        <div class="h6 mb-0 text-dark">
-                            <strong>Charif El Belghiti</strong>
-                            <span class="text-muted small ms-2">© 2024 All Rights Reserved</span>
+            <div class="resume-section">
+                <h2 class="fw-bolder">Education</h2>
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <div class="duration">2021 - 2023</div>
+                        <div class="experience-title">Faculty of Sciences BEN M'SIK, Casablanca, Morocco</div>
+                        <div class="small-text">Master's in Data Science and Big Data</div>
+                        <p>
+                            This program was a significant step in my education and career, where I gained in-depth knowledge in artificial intelligence, machine learning, deep learning, and advanced mathematics. Additionally, I explored big data technologies and advanced concepts related to data processing and analysis, preparing me for complex data-driven challenges in the industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <div class="duration">2018 - 2021</div>
+                        <div class="experience-title">Faculty of Science and Technology, Errachidia, Morocco</div>
+                        <div class="small-text">Bachelor's in Software Engineering</div>
+                        <p>
+                            This program provided a strong foundation in advanced mathematics, including algebra, analysis, statistics, and probability. It also included topics in physics, such as mechanics and quantum principles. Alongside theoretical knowledge, I delved into software engineering, developing skills in algorithm design, programming, and system development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-section">
+                <h2 class="fw-bolder">Skills</h2>
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <h3>Languages:</h3>
+                        <div class="row">
+                            <div class="col-6">Python</div>
+                            <div class="col-6">Java</div>
+                            <div class="col-6">SQL</div>
                         </div>
                     </div>
-                    <div class="col-auto">
-                        <div class="d-flex align-items-center">
-                            <a href="#" class="text-muted small me-3 text-decoration-none">
-                                <i class="bi bi-linkedin"></i>
-                            </a>
-                            <a href="#" class="text-muted small me-3 text-decoration-none">
-                                <i class="bi bi-twitter"></i>
-                            </a>
-                            <a href="#" class="text-muted small text-decoration-none">
-                                <i class="bi bi-envelope"></i>
-                            </a>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <h3>Web Development:</h3>
+                        <div class="row">
+                            <div class="col-6">HTML</div>
+                            <div class="col-6">CSS</div>
+                            <div class="col-6">JavaScript</div>
+                            <div class="col-6">Django</div>
+                            <div class="col-6">Flask</div>
+                            <div class="col-6">FastAPI</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <h3>Data Visualization:</h3>
+                        <div class="row">
+                            <div class="col-6">Tableau</div>
+                            <div class="col-6">Power BI</div>
+                            <div class="col-6">Seaborn</div>
+                            <div class="col-6">Matplotlib</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <h3>ML & DL:</h3>
+                        <div class="row">
+                            <div class="col-6">Scikit-learn</div>
+                            <div class="col-6">PyTorch</div>
+                            <div class="col-6">TensorFlow</div>
+                            <div class="col-6">Keras</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <h3>Databases:</h3>
+                        <div class="row">
+                            <div class="col-6">MySQL</div>
+                            <div class="col-6">SQL Server</div>
+                            <div class="col-6">PostgreSQL</div>
+                            <div class="col-6">MongoDB</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <h3>Big Data:</h3>
+                        <div class="row">
+                            <div class="col-6">Hadoop</div>
+                            <div class="col-6">Spark</div>
+                            <div class="col-6">PySpark</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <h3>Others:</h3>
+                        <div class="row">
+                            <div class="col-6">Git</div>
+                            <div class="col-6">GitHub</div>
+                            <div class="col-6">Talend</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        </div>
+    </main>
+    <footer class="bg-white py-5">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <div class="h6 mb-0 text-dark">
+                        <strong>Charif El Belghiti</strong>
+                        <span class="text-muted small ms-2">© 2024 All Rights Reserved</span>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="text-muted small me-3 text-decoration-none">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-muted small me-3 text-decoration-none">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="text-muted small text-decoration-none">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
